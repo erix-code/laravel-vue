@@ -20,6 +20,9 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
+//SliderController
+route::get('home-SliderController','Admin\SliderController@index');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('home', function () {
